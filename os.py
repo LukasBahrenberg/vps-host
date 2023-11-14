@@ -51,7 +51,7 @@ subprocess.run('systemctl start fail2ban', shell=True)
 subprocess.run('systemctl status fail2ban', shell=True)
 
 # git repo
-subprocess.run('git clone https://github.com/LukasBahrenberg/ubuntu-workstation.git /home/{}/ubuntu-workstation'.format(user), shell=True)
+subprocess.run('git clone https://github.com/LukasBahrenberg/vps-host.git /home/{}/ubuntu-workstation'.format(user), shell=True)
 
 # reset permissions
 subprocess.run('chown -R {}:sudo /home/{}'.format(user, user), shell=True)
