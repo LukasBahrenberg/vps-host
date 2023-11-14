@@ -28,11 +28,6 @@ subprocess.run('apt-get install -y libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev
 subprocess.run('apt install -y fail2ban', shell=True)
 subprocess.run('apt-get install -y git', shell=True)
 
-# install current nodejs version
-subprocess.run('curl -fsSL https://deb.nodesource.com/setup_current.x | -E bash -', shell=True)    
-subprocess.run('apt-get update', shell=True)
-subprocess.run('apt-get install -y nodejs', shell=True)
-
 # install docker 
 subprocess.run('apt install -y software-properties-common', shell=True)
 subprocess.run('curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg', shell=True)
