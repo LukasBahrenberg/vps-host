@@ -5,7 +5,7 @@ import getpass
 subprocess.run('sudo rm -rf /os.py', shell=True)
 
 # install current nodejs version
-subprocess.run('curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -', shell=True)    
+# subprocess.run('curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -', shell=True)    
 subprocess.run('sudo apt-get update', shell=True)
 subprocess.run('sudo apt-get install -y nodejs', shell=True)
 
